@@ -38,7 +38,7 @@ cadencr registry validate-submission /path/to/submission.json
 cadencr registry validate --base /path/to/base --candidate /path/to/candidate
 ```
 
-Use the [CLI contract](https://github.com/merkr-software/cadencr/blob/07a41cbcacbcf7bdcfddb514313cbe9d146c101b/packages/cli/README.md) for the exact kind-specific
+Use the [CLI contract](https://github.com/merkr-software/cadencr/blob/3ebb603160d9dcf054adbb6315c68cb8702cf7ce/packages/cli/README.md) for the exact kind-specific
 submission envelopes. Legacy providers use schema 1; mixed entries/submissions use
 explicit schema-2 kinds. The schemas in this registry are legacy provider-only references, not schema-2
 theme/tab contracts. Use the Rust CLI for the complete semantic policy. Maintainers separately check that the source tag resolves to the
@@ -60,6 +60,12 @@ checks continuity against the authenticated prior signed catalog.
 ## Identity, ownership and licensing
 
 - IDs use `^[a-z][a-z0-9-]*$`; normalized collisions and reserved identities fail.
+- The retired built-in `cursor` identity is admitted only for the official
+  `cadencr` publisher from a `merkr-software` repository, with an explicit
+  minimum app version of `0.16.0` or newer. Other built-in identities and
+  normalized lookalikes remain reserved.
+- The publisher `cadencr` (any letter case) is reserved for the official
+  `merkr-software` GitHub organisation; other source repositories are rejected.
 - New identities require proof of authority over the linked source project.
 - A normal version PR cannot silently transfer publisher/source ownership.
   Transfers need a separate explicit administrative procedure and independent

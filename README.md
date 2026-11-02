@@ -20,9 +20,10 @@ has no JavaScript business engine or npm installation step.
 | `.github/workflows/`  | Contribution CI and protected publication, renewal and watch jobs |
 
 Use the exact released executable selected by `ci/released-cli.env`:
-`0.15.2`. Verify the release checksum and exact version before
+`0.15.4`. Verify the release checksum and exact version before
 execution; do not substitute an unreviewed local build or a fallback runtime.
-See the [public CLI contract](https://github.com/merkr-software/cadencr/blob/07a41cbcacbcf7bdcfddb514313cbe9d146c101b/packages/cli/README.md).
+The [qualification record](https://github.com/merkr-software/CadencR/blob/d3b39bce24771b72a613dee30fb1e7bad79e4692/docs/qa/MARKETPLACE_STABLE_CLI_0154_2026_11_02.md) covers provider-author publication/recovery and general offline checks.
+See the [public CLI contract](https://github.com/merkr-software/cadencr/blob/3ebb603160d9dcf054adbb6315c68cb8702cf7ce/packages/cli/README.md).
 
 ## Local metadata checks
 
