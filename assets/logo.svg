@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">Cadencr Registry</title>
+  <desc id="logo-description">Twelve index dots surround four package tiles. The upper-right tile is emerald.</desc>
+  <style>
+    .registry-ink { fill: #222429; }
+    .registry-accent { fill: #087653; }
+    @media (prefers-color-scheme: dark) {
+      .registry-ink { fill: #eff0f2; }
+      .registry-accent { fill: #2db47d; }
+    }
+  </style>
+  <g class="registry-ink">
+    <circle cx="24.00" cy="9.50" r="1.9"/>
+    <circle cx="31.25" cy="11.44" r="1.9"/>
+    <circle cx="36.56" cy="16.75" r="1.9"/>
+    <circle cx="38.50" cy="24.00" r="1.9"/>
+    <circle cx="36.56" cy="31.25" r="1.9"/>
+    <circle cx="31.25" cy="36.56" r="1.9"/>
+    <circle cx="24.00" cy="38.50" r="1.9"/>
+    <circle cx="16.75" cy="36.56" r="1.9"/>
+    <circle cx="11.44" cy="31.25" r="1.9"/>
+    <circle cx="9.50" cy="24.00" r="1.9"/>
+    <circle cx="11.44" cy="16.75" r="1.9"/>
+    <circle cx="16.75" cy="11.44" r="1.9"/>
+    <rect x="17.5" y="17.5" width="5.5" height="5.5" rx="1.25"/>
+    <rect x="17.5" y="25" width="5.5" height="5.5" rx="1.25"/>
+    <rect x="25" y="25" width="5.5" height="5.5" rx="1.25"/>
+  </g>
+  <rect class="registry-accent" x="25" y="17.5" width="5.5" height="5.5" rx="1.25"/>
+</svg>
