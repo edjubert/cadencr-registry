@@ -3,8 +3,8 @@
   "repository": "merkr-software/cadencr-registry",
   "key_id": "cadencr-registry-1",
   "discovery_branch": "marketplace-v2",
-  "generated_at": "2026-10-26T21:35:00Z",
-  "expires_at": "2026-11-08T21:35:00Z",
+  "generated_at": "2026-11-03T06:29:55Z",
+  "expires_at": "2026-11-16T06:29:55Z",
   "previous_index": "publication/previous-index.json",
   "public_key": "publication/public.pem",
   "trust": {
@@ -15,7 +15,7 @@
   },
   "publications": [
     {
-      "submission": "submissions/pi-0.4.1.json"
+      "submission": "submissions/cursor-0.1.0.json"
     }
   ]
 }
