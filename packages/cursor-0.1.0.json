@@ -1,0 +1,48 @@
+{
+  "kind": "provider",
+  "package": {
+    "agent": {
+      "description": "External Cadencr provider connector for the Cursor Agent CLI (ACP proxy)",
+      "distribution": {
+        "binary": {
+          "darwin-aarch64": {
+            "archive": "https://github.com/merkr-software/CadencR/releases/download/plugins%2Fprovider-cursor%2Fv0.1.0/provider-cursor-0.1.0-darwin-aarch64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "d76d600c6350157a60ec2fa195d264b9416beec6f6d74a66f284ddc4f0dd6b4c"
+          },
+          "darwin-x86_64": {
+            "archive": "https://github.com/merkr-software/CadencR/releases/download/plugins%2Fprovider-cursor%2Fv0.1.0/provider-cursor-0.1.0-darwin-x86_64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "25fc119103dcc193fc4d11b11e58411a0ebfa14eb350d2091919fe2ccf310831"
+          },
+          "linux-aarch64": {
+            "archive": "https://github.com/merkr-software/CadencR/releases/download/plugins%2Fprovider-cursor%2Fv0.1.0/provider-cursor-0.1.0-linux-aarch64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "23e39800fde86342635a21806dc07e2d85426e431c4e716686c5ba52c6b68ffa"
+          },
+          "linux-x86_64": {
+            "archive": "https://github.com/merkr-software/CadencR/releases/download/plugins%2Fprovider-cursor%2Fv0.1.0/provider-cursor-0.1.0-linux-x86_64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "b5dde23bdc245b2adb2e84ad60deba4b3eeac9a57aa575601268a8c81474a6a8"
+          }
+        }
+      },
+      "id": "cursor",
+      "license": "Apache-2.0",
+      "name": "Cursor",
+      "repository": "https://github.com/merkr-software/CadencR",
+      "version": "0.1.0"
+    },
+    "host": {
+      "assets": {
+        "icon": "icon.svg",
+        "license": "LICENSE",
+        "readme": "README.md"
+      },
+      "compatibility": {
+        "min_app_version": "0.16.0"
+      },
+      "publisher": "cadencr"
+    }
+  }
+}
