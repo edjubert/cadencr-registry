@@ -17,31 +17,31 @@
         },
         "distribution": {
           "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab.tar.gz",
-          "sha256": "REMPLACER_PAR_LE_SHA256_DE_tab.tar.gz_APRÈS_BUILD",
+          "sha256": "528132b8107a57d83b73f8aea020f59ea9bc23ba4a9a3288f5410d1d666d04e8",
           "binary": {
             "darwin-aarch64": {
               "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab-backend-darwin-aarch64.tar.gz",
-              "sha256": "REMPLACER_PAR_LE_SHA256_DE_L_ARCHIVE",
-              "size": 0,
+              "sha256": "7354c83ac34266cf9afbaa4420188125231b69e45e54cc44ba6fdfc58022a888",
+              "size": 2574517,
               "cmd": "bin/darwin-aarch64/review-nvim",
-              "executable_sha256": "REMPLACER_PAR_LE_SHA256_DE_L_EXECUTABLE",
-              "executable_size": 0
+              "executable_sha256": "a30485eb1404643c78044a25600405821e67424ff5ad3d02ccf986e61908740c",
+              "executable_size": 4446512
             },
             "darwin-x86_64": {
               "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab-backend-darwin-x86_64.tar.gz",
-              "sha256": "REMPLACER_PAR_LE_SHA256_DE_L_ARCHIVE",
-              "size": 0,
+              "sha256": "a4a95537358c71ad1d67813cbabe5f93f31e5c580081e29a166b99c200e08c2d",
+              "size": 2761218,
               "cmd": "bin/darwin-x86_64/review-nvim",
-              "executable_sha256": "REMPLACER_PAR_LE_SHA256_DE_L_EXECUTABLE",
-              "executable_size": 0
+              "executable_sha256": "ffefaf605548d207a8c62f9aad057290c664f56d8f4131c2c0211b06df84d171",
+              "executable_size": 4706080
             },
             "linux-x86_64": {
               "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab-backend-linux-x86_64.tar.gz",
-              "sha256": "REMPLACER_PAR_LE_SHA256_DE_L_ARCHIVE",
-              "size": 0,
+              "sha256": "68c2f312402bd827106ca2b469cbd94fbd1812bf89550848bedf897cc1326918",
+              "size": 2774504,
               "cmd": "bin/linux-x86_64/review-nvim",
-              "executable_sha256": "REMPLACER_PAR_LE_SHA256_DE_L_EXECUTABLE",
-              "executable_size": 0
+              "executable_sha256": "9c4313f4bf58026e5f360fdb69a9b9a47eb9fd4de87872a700656ef03b6476e9",
+              "executable_size": 4739209
             }
           }
         }
@@ -56,8 +56,8 @@
   },
   "source": {
     "repository": "https://github.com/edjubert/review.nvim",
-    "commit": "ca66ee24e98587f961387ae1f773ecd6ec007ab2",
+    "commit": "b2534816ac98673366ef6bd01a74e490440bd365",
     "tag": "cadencr-v0.1.4"
   },
-  "changelog": "GitLab write requests (approve, submit, replies, resolve, request changes) now send an explicit Content-Type: application/json header with glab api --input -, fixing HTTP 415 on GitLab instances that enforce a JSON content type with glab < v1.123.0. Source: PR #2."
+  "changelog": "GitLab write requests (approve, submit, replies, resolve, request changes) now send an explicit Content-Type: application/json header with glab api --input -, fixing HTTP 415 on GitLab instances that enforce a JSON content type with glab < v1.123.0. Bundles review.nvim main ca66ee24 (PR #2)."
 }
