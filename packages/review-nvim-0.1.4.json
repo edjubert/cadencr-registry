@@ -1,0 +1,54 @@
+{
+  "kind": "tab",
+  "package": {
+    "tab": {
+      "id": "review-nvim",
+      "name": "review.nvim",
+      "description": "Review GitLab merge requests and GitHub or Codeberg pull requests in an embedded Neovim session, with local comment drafts.",
+      "version": "0.1.4",
+      "repository": "https://github.com/edjubert/review.nvim",
+      "license": "MIT",
+      "api_version": 1,
+      "backend": {
+        "protocol": 1,
+        "reasoning": "Runs your installed Neovim in a pseudo-terminal with the bundled review.nvim plugin and your Neovim configuration. Git and authenticated glab/gh or curl access the review host; comments stay local until explicitly submitted in Neovim."
+      },
+      "distribution": {
+        "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab.tar.gz",
+        "sha256": "REMPLACER_PAR_LE_SHA256_DE_tab.tar.gz_APRÈS_BUILD",
+        "binary": {
+          "darwin-aarch64": {
+            "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab-backend-darwin-aarch64.tar.gz",
+            "sha256": "REMPLACER_PAR_LE_SHA256_DE_L_ARCHIVE",
+            "size": 0,
+            "cmd": "bin/darwin-aarch64/review-nvim",
+            "executable_sha256": "REMPLACER_PAR_LE_SHA256_DE_L_EXECUTABLE",
+            "executable_size": 0
+          },
+          "darwin-x86_64": {
+            "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab-backend-darwin-x86_64.tar.gz",
+            "sha256": "REMPLACER_PAR_LE_SHA256_DE_L_ARCHIVE",
+            "size": 0,
+            "cmd": "bin/darwin-x86_64/review-nvim",
+            "executable_sha256": "REMPLACER_PAR_LE_SHA256_DE_L_EXECUTABLE",
+            "executable_size": 0
+          },
+          "linux-x86_64": {
+            "archive": "https://github.com/edjubert/review.nvim/releases/download/cadencr-v0.1.4/tab-backend-linux-x86_64.tar.gz",
+            "sha256": "REMPLACER_PAR_LE_SHA256_DE_L_ARCHIVE",
+            "size": 0,
+            "cmd": "bin/linux-x86_64/review-nvim",
+            "executable_sha256": "REMPLACER_PAR_LE_SHA256_DE_L_EXECUTABLE",
+            "executable_size": 0
+          }
+        }
+      }
+    },
+    "host": {
+      "publisher": "edjubert",
+      "compatibility": {
+        "min_app_version": "0.16.0"
+      }
+    }
+  }
+}
