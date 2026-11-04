@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "package": {
+    "agent": {
+      "id": "pidancr",
+      "name": "pi (pidancr)",
+      "version": "0.2.1",
+      "description": "Independent ACP connector for Pi's native RPC mode.",
+      "repository": "https://github.com/edjubert/cadencr-plugin-provider-pi",
+      "website": "https://github.com/earendil-works/pi",
+      "authors": [
+        "edjubert"
+      ],
+      "license": "Apache-2.0",
+      "distribution": {
+        "binary": {
+          "darwin-aarch64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.2.1/provider-pidancr-0.2.1-darwin-aarch64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "11909667c16d9263bca16e66904a4b54e05d5b4def3ab44fee07205dbbe7f4f7"
+          },
+          "darwin-x86_64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.2.1/provider-pidancr-0.2.1-darwin-x86_64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "a777d5e49c6cb75dd7888bbcdf695e98e618c2a2c413efb8183ca6fd6277c5cc"
+          },
+          "linux-aarch64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.2.1/provider-pidancr-0.2.1-linux-aarch64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "88550d663eb34451a9372c9f06920b5778685d839f364722d1790d02779b4870"
+          },
+          "linux-x86_64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.2.1/provider-pidancr-0.2.1-linux-x86_64.tar.gz",
+            "cmd": "bin/provider",
+            "sha256": "3f1fe040a188f25281ea990478c487e1f1fe3f0bd4315a170ac02d9b0d57a679"
+          }
+        }
+      }
+    },
+    "host": {
+      "publisher": "edjubert",
+      "compatibility": {
+        "min_app_version": "0.16.0"
+      },
+      "assets": {
+        "icon": "icon.svg",
+        "readme": "README.md",
+        "license": "LICENSE"
+      }
+    }
+  },
+  "source": {
+    "repository": "https://github.com/edjubert/cadencr-plugin-provider-pi",
+    "commit": "5a28d3feda63ac8ed327d3696a7f48e21f5639d3",
+    "tag": "v0.2.1"
+  },
+  "changelog": "## pi (pidancr) 0.2.1\n\n- Display the connector as **pi (pidancr)** in marketplace metadata, local\n  descriptors and ACP initialization so users can find it by the Pi name.\n  The provider ID remains `pidancr`, publisher remains `edjubert`, and\n  workspace-bound `pidancr-v1.` session identities are unchanged.\n- Publish new versioned archives through GitHub's immutable-release protection.\n  Publication checks the server-side `immutable` flag after all draft assets\n  have been uploaded and the release has been published.\n- Include the displayed name in every native qualification record and require\n  it to match the package metadata during final assembly.\n- Use process-wide identifiers for extension confirmation requests and qualify\n  independent confirmation responses in simultaneous sessions with native Pi.\n- Recommend and qualify native Pi `1.5.0`; its production dependencies must pass\n  `npm audit` on every release runner.\n\nCompatible with CadencR >=0.16.0. Requires a separately installed Pi CLI\n(`1.5.0` audited) and Node.js >=22.19.0. Authenticate using Pi itself.\nCredentials and the native Pi runtime are not bundled.\nPi tools execute without per-tool approval; extension confirm/select dialogs\nare bridged to ACP permissions. Existing raw Pi session IDs from connector\n0.1.0 require a new CadencR conversation; their native Pi session files remain\navailable through Pi. Sessions from `pidancr 0.2.0` retain their identities.\n"
+}
