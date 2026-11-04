@@ -6,7 +6,7 @@
       "agent": {
         "id": "mistral-vibe",
         "name": "Mistral Vibe",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "description": "Mistral Vibe coding agent, bridged to CadencR through its native ACP binary vibe-acp.",
         "authors": [
           "edjubert"
@@ -17,9 +17,9 @@
         "distribution": {
           "binary": {
             "darwin-aarch64": {
-              "archive": "https://github.com/edjubert/cadencr-plugin-provider-vibe/releases/download/v0.1.0/provider-mistral-vibe-0.1.0-darwin-aarch64.tar.gz",
+              "archive": "https://github.com/edjubert/cadencr-plugin-provider-vibe/releases/download/v0.1.1/provider-mistral-vibe-0.1.1-darwin-aarch64.tar.gz",
               "cmd": "bin/provider",
-              "sha256": "5c6cd252bef4fb21acc584a145f8d65df6a560b4169f5bbd8b417edc19c75bce"
+              "sha256": "7c96a1940f9e3b02a8c4a9f9eb9b803a28d20423a26d8f2e3a5a111195645ba4"
             }
           }
         }
@@ -39,8 +39,8 @@
   },
   "source": {
     "repository": "https://github.com/edjubert/cadencr-plugin-provider-vibe",
-    "commit": "a1619e77dfb09a8b2742e3dc6aa5cf5362fe69a6",
-    "tag": "v0.1.0"
+    "commit": "89a55249b0118b6d954acb76bd1704c1d9d31dea",
+    "tag": "v0.1.1"
   },
-  "changelog": "Initial CadencR Marketplace release for the Mistral Vibe provider."
+  "changelog": "Fix ACP discovery child cleanup on every post-spawn exit and enforce a global discovery deadline with reserved cleanup time. Add process and timeout regression tests and native Apple Silicon CI build provenance."
 }
