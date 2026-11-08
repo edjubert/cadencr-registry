@@ -3,9 +3,9 @@
   "repository": "merkr-software/cadencr-registry",
   "key_id": "cadencr-registry-1",
   "discovery_branch": "marketplace-v2-admin",
-  "generated_at": "2026-11-08T20:01:49Z",
-  "expires_at": "2026-11-21T20:01:49Z",
-  "previous_index": "administration/lsp-baseline.json",
+  "generated_at": "2026-11-08T21:36:37Z",
+  "expires_at": "2026-11-21T21:36:37Z",
+  "previous_index": "administration/pi-baseline.json",
   "public_key": "publication/public.pem",
   "trust": {
     "manifest": "publication/trust-manifest.json",
@@ -13,78 +13,24 @@
     "root_key_id": "cadencr-root-1",
     "minimum_generation": 1
   },
-  "publications": [
+  "publications": [],
+  "provider_handoffs": [
     {
-      "submission": "submissions/astro-ls-0.1.0.json"
-    },
-    {
-      "submission": "submissions/bash-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/biome-0.1.0.json"
-    },
-    {
-      "submission": "submissions/clangd-0.1.0.json"
-    },
-    {
-      "submission": "submissions/css-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/docker-langserver-0.1.0.json"
-    },
-    {
-      "submission": "submissions/eslint-0.1.0.json"
-    },
-    {
-      "submission": "submissions/gopls-0.1.0.json"
-    },
-    {
-      "submission": "submissions/graphql-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/html-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/json-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/lua-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/marksman-0.1.0.json"
-    },
-    {
-      "submission": "submissions/oxlint-0.1.0.json"
-    },
-    {
-      "submission": "submissions/pyright-0.1.0.json"
-    },
-    {
-      "submission": "submissions/ruff-0.1.0.json"
-    },
-    {
-      "submission": "submissions/rust-analyzer-0.1.0.json"
-    },
-    {
-      "submission": "submissions/svelte-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/tailwindcss-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/taplo-0.1.0.json"
-    },
-    {
-      "submission": "submissions/terraform-ls-0.1.0.json"
-    },
-    {
-      "submission": "submissions/typescript-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/vue-language-server-0.1.0.json"
-    },
-    {
-      "submission": "submissions/yaml-language-server-0.1.0.json"
+      "provider_id": "pi",
+      "from": {
+        "publisher": "cadencr",
+        "repository": "https://github.com/merkr-software/CadencR"
+      },
+      "to": {
+        "publisher": "edjubert",
+        "repository": "https://github.com/edjubert/cadencr-plugin-provider-pi"
+      },
+      "retired_versions": {
+        "0.4.0": "8f434a4793ac955b4d76c49f8b36627a56154a60e31fc615f2f620d789a71add",
+        "0.4.1": "efd43c79b5380cbc5ea2a934087a273089568edaa11e52ed80881cb187beb8b2"
+      },
+      "authorization": "https://github.com/merkr-software/cadencr-registry/pull/22#issuecomment-6630319571",
+      "reason": "Retire the first-party Pi connector and transfer the provider namespace to edjubert. Historical releases and existing installations remain intact. Old connector sessions are not declared compatible with the successor."
     }
   ]
 }
