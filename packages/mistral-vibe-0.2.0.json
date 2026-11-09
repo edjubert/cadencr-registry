@@ -17,7 +17,7 @@
           "darwin-aarch64": {
             "archive": "https://github.com/edjubert/cadencr-plugin-provider-vibe/releases/download/v0.2.0/provider-mistral-vibe-0.2.0-darwin-aarch64.tar.gz",
             "cmd": "bin/provider",
-            "sha256": "2e11135bff2f3a05d3e78017f910f980f145c8094978e013dae9835d97192b8b"
+            "sha256": "5a14ebea01090e2387e01ef7650bc1aae82163354ca5c57f3b559fe858f75ae2"
           }
         }
       }
