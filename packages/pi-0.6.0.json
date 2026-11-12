@@ -1,0 +1,49 @@
+{
+  "agent": {
+    "id": "pi",
+    "name": "Pi",
+    "version": "0.6.0",
+    "description": "Independent ACP connector for Pi's native RPC mode.",
+    "repository": "https://github.com/edjubert/cadencr-plugin-provider-pi",
+    "website": "https://github.com/earendil-works/pi",
+    "authors": [
+      "edjubert"
+    ],
+    "license": "Apache-2.0",
+    "distribution": {
+      "binary": {
+        "darwin-aarch64": {
+          "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.6.0/provider-pi-0.6.0-darwin-aarch64.tar.gz",
+          "cmd": "bin/provider",
+          "sha256": "0af5611cea2cd91034cd9261b096fff4e0ffd7b623c6f1e3396d6beb6cf11390"
+        },
+        "darwin-x86_64": {
+          "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.6.0/provider-pi-0.6.0-darwin-x86_64.tar.gz",
+          "cmd": "bin/provider",
+          "sha256": "1a2fbfac086d1108e3f4ebcb3bdbd7adece79accc11315fddf41b1f796be2199"
+        },
+        "linux-aarch64": {
+          "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.6.0/provider-pi-0.6.0-linux-aarch64.tar.gz",
+          "cmd": "bin/provider",
+          "sha256": "602be436fc85ec927154670fed75cffbe6f91437b301d36187b80ab23e1e47a6"
+        },
+        "linux-x86_64": {
+          "archive": "https://github.com/edjubert/cadencr-plugin-provider-pi/releases/download/v0.6.0/provider-pi-0.6.0-linux-x86_64.tar.gz",
+          "cmd": "bin/provider",
+          "sha256": "31b758c2f16f49f9331f1f13aff03959951526ab6e8cf612ea9269578f28454a"
+        }
+      }
+    }
+  },
+  "host": {
+    "publisher": "edjubert",
+    "compatibility": {
+      "min_app_version": "0.16.0"
+    },
+    "assets": {
+      "icon": "icon.svg",
+      "readme": "README.md",
+      "license": "LICENSE"
+    }
+  }
+}

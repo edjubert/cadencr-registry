@@ -4,6 +4,81 @@ Operational procedures for the protected publication, renewal and revocation
 workflows of this registry. Command syntax is in the
 [release configuration](https://github.com/merkr-software/cadencr/blob/main/docs/MARKETPLACE_RELEASE_CONFIG.md).
 
+## Administrative provider retirement and ownership transfer
+
+Administrative retirement uses explicit, signed, append-only handoff records.
+Each record binds every retired version to its original owner/source and canonical
+mirrored-entry digest. Retired package and submission files remain immutable
+historical evidence. Only a reviewed protected publication request may introduce
+records into the live signed catalog; ordinary version contributions cannot change
+them. Namespace authority does not approve a replacement artifact, migrate sessions,
+or revoke an identity.
+
+The current CLI pin must be replaced by an actually released and qualified
+handoff-capable CLI, and compatible clients delivered, before a handoff request can
+be published. The selector rejects an incapable CLI before materializing secrets.
+The infrastructure is safe to review independently: absent administrative records
+and opt-in configuration, existing catalog and policy operations stay on legacy.
+
+Pi's operation is tracked in [issue #23](https://github.com/merkr-software/cadencr-registry/issues/23).
+Its [separate retirement-only PR #29](https://github.com/merkr-software/cadencr-registry/pull/29)
+contains the owner record, captured baseline and prepared request. The compatible
+implementation is reviewed in [CadencR PR #386](https://github.com/merkr-software/CadencR/pull/386).
+Neither PR creation nor infrastructure integration publishes retirement. The
+delivery order below applies before any administrative activation.
+
+## Administrative catalog compatibility channel
+
+`marketplace-v2-admin` is a separate signed schema-2 catalog channel for clients
+that understand append-only provider handoff records. Keep old clients on their
+existing `marketplace-v2` catalog. Handoff-bearing payloads are rejected on the
+legacy channel before publication writes; no signature/continuity exception is
+introduced. Revocation policies retain their existing legacy URLs/domains.
+
+Before releasing clients pointed at the new channel, authenticate and archive the
+exact current legacy head/catalog, then create the new branch at that exact head.
+It must contain those same authenticated catalog bytes. A schema2-to-schema2 fork
+uses normal existing-baseline CAS; do not substitute an empty `bootstrap` request.
+Compatible clients use an independent `administrative-catalog.json` cache so a
+later legacy renewal cannot mask the retirement. Installed receipts and both
+catalog histories remain intact.
+
+The new `renew-administrative-catalog` workflow is inert until the public variable
+`CADENCR_REGISTRY_ADMINISTRATIVE_CATALOG_URL` names this registry's exact
+`refs/heads/marketplace-v2-admin/managed-index.json` URL. It renews and watches only
+that catalog with the existing protected renewal environment and shared
+`marketplace-publication` lane. Leave legacy renewal/policy variables unchanged.
+Its default-branch gate compares the full `github.ref`, excluding same-named tags.
+
+A qualified released handoff-capable CLI must be pinned atomically by version,
+tag and digest before administrative activation. The selector checks capability
+without requiring a manual root request. Protected manual publication confirms
+that the authenticated baseline history plus the request delta equals the
+reviewed root records. Legacy publication ignores unrelated root administrative
+history but refuses handoffs in its own baseline/delta. Renewals preserve records
+from their authenticated channel baseline and cannot add a handoff.
+
+## Optional LSP revocation policy
+
+Set `CADENCR_REGISTRY_LSP_BLOCKLIST_URL` to this registry's exact legacy
+`refs/heads/marketplace-v2/managed-lsp-blocklist.json` URL to include the signed
+LSP policy in bootstrap, daily renewal and expiry monitoring. The LSP policy is
+optional for registries without LSP packages. Once configured, missing or invalid
+metadata fails the relevant operation; it is never treated as an empty policy.
+
+Bootstrap publishes only a missing policy, with `kind: "lsp-blocklist"`, empty
+entries and a 13-day window. Existing provider, theme, tab and LSP policies are
+skipped without replacement. The publishing job requires review in
+`protected-marketplace-publisher`; renewal can only preserve existing entries.
+Use an immutable, qualified CLI with LSP policy support before enabling it.
+
+Keep this policy URL on the legacy branch when compatible clients use
+`marketplace-v2-admin`. Set the app's `CADENCR_MANAGED_LSP_BLOCKLIST_URL` only
+after independently verifying the publicly readable signature and validity window,
+and before compiling that client. A valid empty policy does not admit LSP packages
+or execute their archives; catalog admission and package qualification remain
+separate reviewed operations.
+
 ## Automatic catalog and policy renewal and expiry watch
 
 These workflows automate the routine part of the renewal runbook below. They

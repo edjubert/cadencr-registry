@@ -1,3 +1,5 @@
+![Cadencr Registry logo](assets/logo.png)
+
 # Cadencr Registry
 
 Official public registry metadata and distribution assets for Cadencr providers,
@@ -11,6 +13,7 @@ has no JavaScript business engine or npm installation step.
 
 | Path                  | Purpose                                                           |
 | --------------------- | ----------------------------------------------------------------- |
+| `assets/`             | Registry logo and visual identity                                 |
 | `packages/`           | Immutable package metadata                                        |
 | `submissions/`        | Matching source-pinned submissions                                |
 | `schemas/`            | Structural reference schemas; semantic CLI validation is required |

@@ -2,9 +2,9 @@
   "schema_version": 2,
   "repository": "merkr-software/cadencr-registry",
   "key_id": "cadencr-registry-1",
-  "discovery_branch": "marketplace-v2",
-  "generated_at": "2026-11-03T06:29:55Z",
-  "expires_at": "2026-11-16T06:29:55Z",
+  "discovery_branch": "marketplace-v2-admin",
+  "generated_at": "2026-11-11T11:34:54Z",
+  "expires_at": "2026-11-24T11:34:54Z",
   "previous_index": "publication/previous-index.json",
   "public_key": "publication/public.pem",
   "trust": {
@@ -15,7 +15,13 @@
   },
   "publications": [
     {
-      "submission": "submissions/cursor-0.1.0.json"
+      "submission": "publication/submissions/pi-0.6.0.json",
+      "registry_commit": "2af87adff63802926d5d88f13997e6021655ecaf"
+    },
+    {
+      "submission": "submissions/review-nvim-0.1.5.json",
+      "registry_commit": "90298266b47b5bac0fa32134f4e3459c62b79d0c"
     }
-  ]
+  ],
+  "provider_handoffs": []
 }
