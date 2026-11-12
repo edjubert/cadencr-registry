@@ -1,0 +1,54 @@
+{
+  "kind": "tab",
+  "package": {
+    "tab": {
+      "id": "lazygit",
+      "name": "LazyGit",
+      "description": "Run LazyGit in the conversation's worktree, with CadencR theme colors and your existing Git configuration.",
+      "version": "0.2.0",
+      "repository": "https://github.com/edjubert/cadencr-plugin-lazygit",
+      "license": "MIT",
+      "api_version": 1,
+      "backend": {
+        "protocol": 1,
+        "reasoning": "Runs your installed LazyGit in a terminal in the conversation's worktree, using your Git configuration and credentials. LazyGit can change files, commit and push through your actions."
+      },
+      "distribution": {
+        "archive": "https://github.com/edjubert/cadencr-plugin-lazygit/releases/download/v0.2.0/tab.tar.gz",
+        "sha256": "836fd981484a71c28ee386908eecde92023521b003c92391fbec298fa73a0c1f",
+        "binary": {
+          "darwin-aarch64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-lazygit/releases/download/v0.2.0/tab-backend-darwin-aarch64.tar.gz",
+            "sha256": "e194457efdb95f794f02fddab937978254d51e76012c20d613b57e156fece3c8",
+            "size": 2795721,
+            "cmd": "bin/darwin-aarch64/lazygit",
+            "executable_sha256": "94f433224a83a5ef75f369b699f79f8682dbec366ce43e12d7bb6c181ad6cf58",
+            "executable_size": 4886736
+          },
+          "darwin-x86_64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-lazygit/releases/download/v0.2.0/tab-backend-darwin-x86_64.tar.gz",
+            "sha256": "fd0dd5c17b048ce170b8a77496cc3acf78c2224979631d679affdd00d5d56f44",
+            "size": 2998811,
+            "cmd": "bin/darwin-x86_64/lazygit",
+            "executable_sha256": "52bafcce7734ef4234eda7c4663d7cd053bc04cd54c8cbeadbdb2fc59dc37e26",
+            "executable_size": 5149520
+          },
+          "linux-x86_64": {
+            "archive": "https://github.com/edjubert/cadencr-plugin-lazygit/releases/download/v0.2.0/tab-backend-linux-x86_64.tar.gz",
+            "sha256": "cc818ae20fea128dd5cea876ebee433724879ded1133ddf8b8db179f23f809fc",
+            "size": 3015442,
+            "cmd": "bin/linux-x86_64/lazygit",
+            "executable_sha256": "eeac4820970ce9749a30df20b2647127eeb4ac7739932f68a17526c68958ff51",
+            "executable_size": 5187988
+          }
+        }
+      }
+    },
+    "host": {
+      "publisher": "edjubert",
+      "compatibility": {
+        "min_app_version": "0.16.2"
+      }
+    }
+  }
+}
