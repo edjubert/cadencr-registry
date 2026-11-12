@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "package": {
+    "kind": "theme",
+    "package": {
+      "theme": {
+        "id": "catppuccin-frost-mocha",
+        "name": "Catppuccin Frost Mocha",
+        "description": "Catppuccin Mocha dark palette with drifting teal, blue and mauve halos and fine grain",
+        "version": "0.1.0",
+        "repository": "https://github.com/edjubert/cadencr-theme-catppuccin-frost",
+        "license": "Apache-2.0",
+        "document_version": 1,
+        "distribution": {
+          "archive": "https://github.com/edjubert/cadencr-theme-catppuccin-frost/releases/download/v0.1.0/catppuccin-frost-mocha-0.1.0.tar.gz",
+          "sha256": "466b20b1d0fe06dd8eea00f3ce405218e29556531762ee4054143032e12a55d4"
+        }
+      },
+      "host": {
+        "publisher": "edjubert",
+        "compatibility": {
+          "min_app_version": "0.16.2"
+        }
+      }
+    }
+  },
+  "source": {
+    "repository": "https://github.com/edjubert/cadencr-theme-catppuccin-frost",
+    "commit": "7d6fd350b9fac427d4c09366c5f35a80466f05cd",
+    "tag": "v0.1.0"
+  },
+  "changelog": "Initial Catppuccin Frost Mocha release: complete UI, editor, diff and dark Mocha terminal palettes, with three drifting teal, blue and mauve halos and fine grain. Declarative theme.json only; no scripts or external assets."
+}
